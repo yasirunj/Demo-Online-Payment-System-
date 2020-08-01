@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <title>EasyPay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <div class="logo-box">
+            <div class="logo">
+                <img src="Logo.png" alt="EasyPay" class="logo-img">
+            </div>
+        </div>
+        <div class="form-box">
+            <div class="upper">
+                <div class="inputs-box"> 
+                    <div class="name-box">
+                        <div class="name-txt">Name on Card</div>
+                        <input type="text" class="card-name">
+                    </div>
+                    <div class="number-box">
+                        <div class="number-txt">Card Number</div>
+                        <input type="number" class="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                    </div>
+                    <div class="sec-box">
+                        <div class="exp-box">
+                            <div class="exp-txt">Expiry</div>
+                            <input type="number" class="exp-month" placeholder="MM" min="01" max="12">
+                            <input type="number" class="exp-year" placeholder="YYYY" min="2020" max="2100">
+                        </div>
+                        <div class="cvv-box">
+                            <div class="cvv-txt">CVV</div>
+                            <input type="number" class="cvv" placeholder="XXX" min="001" max="999">
+                        </div>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <div class="image-1"><img src="visa.png" alt="EasyPay"></div>
+                    <div class="image-2"><img src="mastercard.png" alt="EasyPay"></div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button class="sub-btn">Pay Now</button>
+            </div>
+        </div>
+        <div class="pop" id="mypop">
+            <div class="process-pop">
+                <img src="Logo.png" alt="EasyPay" class="logo-img">
+                <h2>Payment Processing...</h2>
+                <div>Please wait, do not refresh or close window!</div>
+            </div>
+            <div class="success-pop">
+                <img src="Logo.png" alt="EasyPay" class="logo-img">
+                <h2>Payment Successful!</h2>
+                <div>Redirecting to merchant...</div>
+            </div>
+            <div class="unsuccess-pop">
+                <img src="Logo.png" alt="EasyPay" class="logo-img">
+                <h2>Payment Declined!</h2>
+                <div>Redirecting to merchant...</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
